@@ -1,0 +1,436 @@
+
+body
+{
+    background-color:lightblue;
+   background-image: url('frank b.jpg');
+}
+ul {
+    margin: 0px;
+    padding:  0px;
+    list-style: none;
+    float: left;
+}
+ ul li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    opacity:.8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 40px;
+ 
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-transform: capitalize;
+}
+ul li:hover{
+    border:1px solid blue;
+}
+ul li a:hover{
+    background-color: green;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+
+/*header*/
+header {
+	font-family: 'Montserrat', sans-serif;
+	color: wheat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+}
+/* Logo placeholder*/
+#logo {
+	float: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: auto;
+	text-align: center;
+	color: blue;
+	background-color: white;
+        size:auto;
+        font-size: 44px;
+}
+logo div img{
+    width:  5%;
+    height: 5%;
+}
+
+/* div for Links in header */
+
+/* Links in header */
+#headerLinks a {
+	text-decoration: none;
+	color: rgba(146,146,146,1.00);
+	padding-left: 66px;
+	font-size: 14px;
+}
+/* Offer text banner*/
+#offer {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-color:white;
+	color: black;
+	padding-left: 115px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+        font-size:22px;      
+}
+
+/* Main content of the site */
+#content {
+	
+	overflow: auto;
+	padding-top: 29px;
+}
+/* Sidebar */
+#content .sidebar {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	float: left;
+	width: 20%;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	background-color:buttonface;
+	padding-top: 36px;
+	height: 100%;
+}
+/* main content of the site */
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+}
+
+
+/* Search field in sidebar */
+#content .sidebar #search {
+	width: 100%;
+	border-radius: 0px;
+	height: 42px;
+	text-align: center;
+	color: rgba(208,207,207,1.00);
+	font-size: 14px;
+	margin-bottom: 21px;
+      
+}
+
+/* Whole page content */
+#mainWrapper {
+	width: 80%;
+	padding-left: 10%;
+}
+
+
+/*menu elements */
+
+
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 22%;
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: black;
+	white-space: pre-wrap;
+}
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: darkred;
+	height: 35px;
+	color: white;
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+.productRow .productInfo .buyButton:hover{
+    background: green;
+    border-bottom-color: blue;
+}
+/* footer */
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: black;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+        width: auto;
+        
+}
+/*Each footer content */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: buttonface;
+	text-align: justify;
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+footer div a:hover{
+    background: darkorange;
+}
+/* Product's images in catalog */
+.productInfo div img {
+	width: 100%;
+        height: 100%;
+        float: right;
+        padding: 5px;
+}
+
+/*Links in sidebar */
+
+/* Container for links in footer */
+footer .footerlinks {
+	margin-top: -15px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+/* search field in sidebar */
+#content .sidebar #search {
+	display: none;
+}
+/* sidebar */
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-left: 12%;
+	padding-top: 0px;
+}
+/* horizontal separators in sidebar */
+#content .sidebar hr {
+	display: none;
+}
+/*The sidebar and maincontent of page */
+#content {
+	position: relative;
+	top: -22px;
+	width: 100%;
+	overflow: hidden;
+}
+/*menu headings in sidebar */
+#menubar .menu h2 {
+	display: inline;
+	font-size: medium;
+	padding-right: 6%;
+}
+/* Unordered List of links */
+#menubar .menu ul {
+	display: inline;
+}
+/*list elements */
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	padding-left: 0%;
+	padding-right: 3%;
+}
+/*The link to be hidden in tablet view */
+.sidebar #menubar .menu ul .notimp {
+	display: none;
+}
+/* menus in sidebar */
+.sidebar #menubar .menu {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+/*menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+/* offer banners content */
+#mainWrapper #offer p {
+	font-size: small;
+}
+/* main content region of page */
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+/* Prices of products in catalog view */
+.productRow .productInfo .price {
+	font-size: 19px;
+}
+/* Content holders in catalog view */
+.productRow .productInfo .productContent {
+	font-size: 16px;
+}
+/* Buy buttons in catalog view */
+.productRow .productInfo .buyButton {
+	font-size: 15px;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	float: none;
+	width: 100%;
+	position: relative;
+	top: 17px;
+	clear: both;
+	text-align: center;
+	left: 0%;
+	padding-bottom: 19px;
+}
+/* Container for each footer divisions */
+#mainWrapper footer div {
+	width: 44%;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Links in footer */
+.footerlinks p a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline;
+	padding-right: 35px;
+}
+/* Footer region */
+#mainWrapper footer {
+	padding-left: 16px;
+	overflow: hidden;
+}
+/* Links in header */
+header #headerLinks a {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/* Offer- Text banner */
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+}
+}
+
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+/*Container for links in header */
+#mainWrapper header #headerLinks {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(190,190,190,1.00);
+	padding-bottom: 21px;
+}
+/* Logo placeholder*/
+#mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+/* Links in header */
+header #headerLinks a {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+/*Offer - Text Banner */
+#mainWrapper #offer {
+	padding-left: 0px;
+	text-align: center;
+}
+/* Menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -8%;
+	text-align: center;
+}
+/*Menu headings in sidebar */
+#menubar .menu h2 {
+	width: 100%;
+	display: block;
+}
+/* Each product in catalog view */
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+#mainWrapper footer div {
+	width: 100%;
+	margin-left: -16px;
+	text-align: justify;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+/* Unordered list for menu elements */
+.menu ul {
+	position: relative;
+	padding-left: 24%;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	padding-left: 8%;
+}
+/* Main content which excludes the sidebar */
+#mainwrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}
+}
+
